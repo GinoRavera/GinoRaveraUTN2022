@@ -17,7 +17,7 @@ body{
     text-align: center;
 }
 .fotos{
-    align:center;
+    box-align:center;
     padding-left:  40px;
 }
 .rounded-lg{
@@ -26,5 +26,6 @@ body{
 
 .form-inline{
     width: 100%;
+    padding-top: 10px;
     
 }
