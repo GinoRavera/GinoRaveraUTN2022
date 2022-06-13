@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width", initial-scale="1.0">
+<link rel= "stylesheet" href="ejercicio01.html">
+<title>Ejercicio 01</title>
+</head>
+<body>
+        <script>
+            var cantidad_metros= '';
+            var transporte_recomendado= '';
+            
+            cantidad_metros= prompt("Ingrese la cantidad de metros que desea recorrer: ", "");
+            
+            if (cantidad_metros >= 0 && cantidad_metros < 1000){
+                transporte_recomendado= 'pie';
+            }else if (cantidad_metros >= 1000 && cantidad_metros < 10000){ 
+                transporte_recomendado= 'bicicleta';
+            }else if (cantidad_metros >= 10000 && cantidad_metros < 30000){
+                transporte_recomendado='colectivo';
+            }else if (cantidad_metros >= 30000 && cantidad_metros < 100000){ 
+                transporte_recomendado='auto';
+            }else if (cantidad_metros >= 100000){
+                transporte_recomendado='avión';
+            } 
+            document.write(' Es recomendable para ' +  cantidad_metros + ' el tipo de trasporte ' +  transporte_recomendado);
+        </script>
+    </body>
+</html>
