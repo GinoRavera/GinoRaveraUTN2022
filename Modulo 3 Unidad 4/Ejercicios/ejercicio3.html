@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio3.html">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+  <script>
+    var estudiantes = [
+
+    {
+  
+      nombre: 'Juan Gomez',
+  
+      calificación: 7
+  
+    }, {
+  
+      nombre: 'Pedro Rodriguez',
+  
+      calificación: 4
+  
+    }, {
+  
+      nombre: 'Roxana García',
+  
+      calificación: 8
+  
+    }, {
+  
+      nombre: 'Luciano Lopez',
+  
+      calificación: 5
+  
+    }, {
+  
+      nombre: 'Fernanda Gimenez',
+  
+      calificación: 6
+  
+    }, {
+  
+      nombre: 'Florencia Martinez',
+  
+      calificación: 10
+  
+    }, {
+  
+      nombre: 'Raul Sanchez',
+  
+      calificación: 7
+  
+    }, {
+  
+      nombre: 'Sandra Figueroa',
+  
+      calificación: 8
+  
+    }
+  
+  ];
+  var eximidos = estudiantes.filter(function (estudiante){
+      return estudiante.calificación >=7;
+  });
+  
+  console.log(estudiantes);
+  
+  console.log(eximidos);
+  
+  console.log(`${eximidos.length} eximidos`);
+  
+  for(var i=0; i<eximidos.length; i++){
+      document.write(`<p>Estudiante: ${eximidos[i].nombre}, Calificación:${eximidos[i].calificación}</p>`)
+  
+  }
+  
+      eximidos.forEach (a => document.write(`$(a.nombre} (${a.calificación})<br>`))
+  </script>  
+   
+
+</body>
+</html>
