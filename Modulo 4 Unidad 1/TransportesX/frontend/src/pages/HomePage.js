@@ -1,3 +1,4 @@
+import '../styles/components/pages/HomePage.css';
 function HomePage(props) {
     return (
         <main className="holder">
